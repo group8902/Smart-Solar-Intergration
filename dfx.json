@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "smart_solar_intergration_backend": {
+      "main": "src/smart_solar_intergration_backend/main.mo",
+      "type": "motoko"
+    },
+    "smart_solar_intergration_frontend": {
+      "dependencies": [
+        "smart_solar_intergration_backend"
+      ],
+      "source": [
+        "src/smart_solar_intergration_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "smart_solar_intergration_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
